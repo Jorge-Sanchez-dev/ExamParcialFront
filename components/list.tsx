@@ -18,8 +18,8 @@ const ListPalabras: FunctionComponent<Props> = (props) => {
       {ejemplo && <p>Ejemplo: {ejemplo}</p>}
       <p>
         Sinónimos:{" "}
-        {sinonimos.length > 0 ? sinonimos.map((sinonimo, index) => (
-              <a key={index} href={`/buscar/${sinonimo}`}>
+        {sinonimos.length > 0 ? sinonimos.map((sinonimo) => (
+              <a href={`/buscar/${sinonimo}`}>
                 {sinonimo}
               </a>
             )): "ninguno"}
